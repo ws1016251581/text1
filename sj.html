@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- <input type="button" id="btn" value=" anniu">
+   <script>
+   var obj = {
+        name:'z',
+        age : 22,
+        sayHi: function() {
+            console.log (this.name+': hello');
+        }
+   };
+   
+  
+var  s = 'a_b,b__v'; -->
+<!-- //   var arry = s.charAt(1);
+//   var arry1 = s.concat( 'qweqwe');
+//   console.log(arry1);
+//   console.log(arry);
+//   var arry2 = s.indexOf('a');
+//   var arry3 = arry1.trim();
+//   console.log(arry3);
+//   var arry4 = arry3.split(' ');
+//   console.log(arry4);
+// //   var arry5 = arry4.join('');
+
+// var index = -1 ; 
+
+// do {
+//     index = s.indexOf(' ', index +1);
+//     console.log (index);
+//     if(index !== -1)
+//     {
+//         s = s.replace(' ', '');
+//     }
+    
+// }while ( index !== -1)
+// console.log(s);
+
+// 动态创建元素
+// document.write();使用点击按钮的时候会把之前的页面所有内容都覆盖掉再页面加载的时候出，使用在页面服务的时候
+// Element.innerText
+// document.createElement();
+ -->
+<!-- 
+  </script> -->
+
+</head>
+<body>
+    <div id="box">
+    </div>
+    <input type="button" id="btn" value="anniu">
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+  <script>
+    //  var btn = document.getElementById("btn");
+    //   var datas = ['xx' , 'nn' ,'mmm' , 'asd'];
+    //   var arry = [] ;
+        //   不能给事件注册多个函数,c才通用btn.onclik = nu;; ;
+    //         btn.onclick = function(){
+    //             var  box = document.getElementById('box');
+    //                  arry.push('<ul>') ;
+    //             for(var i = 0; i < datas.length; i++){
+    //                var data = datas[i];
+    //                 arry.push('<li>' + data + '</li>') ;
+    //             }
+
+    //         arry.push('</ul>');
+    //         box.innerHTML = arry.join("");
+          
+    // //         }
+    // 浏览器兼容性问题 ie10以后,第三个参数设置完后false为冒泡事件。false 为时间捕获事件的三个阶段 事件捕获，执行当前点击元素，冒泡事件
+
+    
+    //         btn.addEventListener('click' , function(){
+    //             alert('nm');
+    //         })
+    //         btn.addEventListener('click' , function(){
+    //             alert('nmd');
+//     //         })
+// var box1 = document.getElementById('box1');
+// var box2 = document.getElementById('box2');
+// var box3 = document.getElementById('box3');
+// var arry = [ box1, box2 , box3];
+//         for(i = 0; i<arry.length;i++){
+//             arry[i].addEventListener( 'click', function(){
+//                 console.log(this.id);
+//             },false);
+//         }
+
+//   function(element, elementName, fn ){
+//       if(element.addEventListener){
+//           element.addEventListener(elementName, fn);
+//       }
+//       else if (element.attachEvent){
+//           element.attachEvent("on"+ elementName , fn);
+//       }
+//       element['on'+elmentName]= fn;
+//   }
+//   事件委托：原理就是事件冒泡 var ul = document.getElementById('ul');
+//   ul.onclick = function(e){
+//       e事件参数（事件对象）事件发生的时候可以获取一些事件的相关数据
+//       获取道当前点击的li
+//       e.target 是真正触及事件的对象
+//       事件对象的 方法属性
+
+//   }
+
+
+
+// var x = "JohnJohn";              // x 是字符串
+// y = x.charAt(2); // h
+// y = x.charCodeAt(2); // 104
+// y = x.concat(y, y); // JohnJohn104104, x+y+y
+// y = x.indexOf('h'); // 2, 索引从0开始
+// y = x.lastIndexOf('h'); // 6
+// y = x.slice();
+// y = x.split('o'); //J,hnJ,hn
+// y = x.substr(2); // hnJohn
+// y = x.substring(2,4) // hn，[2,3]
+// y = x.toLocaleLowerCase(); // johnjohn,小写
+// y = x.toLocaleUpperCase(); // JOHNJOHN,大写
+// y = x.toString(); // 转成Stirng
+// y = x.toUpperCase(); // JOHNJOHN,大写
+// y = x.trim(); // JohnJohn,去除两端的空格
+// y = x.valueOf(); // 返回某个字符串
+  
+
+// 1.xun寻找指定子串 在父串出现的所有位置，将所有位置下标保存在一个数组中，返回出来
+// var str='abcd,abcd&abcd-abcd';//父字符串indexOf  s1[]
+// str1='abcd';
+// // c)输出：[0,5,10,15]
+
+// function find(str, str3){
+//     var s2 = [];
+//     var b = -1;
+//     do{
+        
+//         var b = str.indexOf(str3 ,b+1 )
+//         if(b !== -1){
+//             s2.push(b);
+//         }
+//     }while( b !== -1)
+//     console.log(s2);
+// }
+// var str='abcd,abcd&abcd-abcd';
+// find (str, str1);
+// var a = [1,2,3 ,3,8,21313,3123,2];
+// console.log(a.sort(function (a,b){ return a - b;}));
+// a）var str='abcd,abcd&abcd-abcd';//父字符串
+// b) var str1='abcd';
+// c)输出：[0,5,10,15]
+// var a=[];
+// var str='abcd,abcd&abcd-abcd';
+// var str1='abcd';
+// var b=str.indexOf(str1); //返回某个指定的字符串值在字符串中首次出现的位置
+// while(b!=-1){ 
+// //从上面的indexOf（str1）检束，假设没有则返回-1
+// a.push(b); //push()方法可向数组的末尾添加一个或多个元素，并返回新的长度
+// b=str.indexOf(str1,b+1);
+// }
+// console.log(a);
+// 2.一段文本，以空格分割，各个单词首字母大写//toUpperCase(); join()
+// a）string='area input html css';
+// // b) 输出的结果：Area Input Html Css;
+// var string='area input html css';
+// function sHow(string){
+//     var arry = string.split("");
+//         arry[0] = arry[0].toUpperCase();
+//     for(var i = 0; i < arry.length-1; i++){
+//         if(arry[i] === " ")
+//         {
+//             arry[i+1] = arry[i+1].toUpperCase();
+//         }
+//     }
+//     var string2 = arry.join("");
+//     console.log(string2);
+// }
+// sHow(string);
+// // var string='area input html css';
+// var b = -1;
+// b = string.indexOf(" ", b+1);
+// console.log(b);
+// var i = 4;
+// var a = string.charAt(i);
+// // console.log(a);
+// 输入一个数字删除数组的数字
+// function yichu(arr , item){
+   
+//     for(var i = 0; i<arr.length; i++ ){
+//         if(arr[i] === item){
+//             arr.splice(i, 1);
+//         }
+//     }
+//     console.log(arr);
+// }
+// var arr2 = [1,3,4,5,2,3,1,1,2];
+// var item = 2;
+// yichu(arr2 , item);
+// 显示数组内重复的数
+// a = 'asddfxcsdfads';
+// var o = { };
+// o[index] = 1;
+// var num ;
+// o[index]++;
+// var 
+// function cha(string ){
+//   var index 
+//   for( var i = 0 ; i < string.length ; i++){
+//       index = string.charAt(i);
+//       if(o[index]){
+//         o[index]++;
+//       }
+//       else{
+//         o[index] = 1;
+
+//     ，
+
+
+
+//   }/数组去重
+// var a = ['a', 'a', 'v', 'v', 'c' ,'c' , 'd' , 'e'];
+// function unique2(arr){
+//   var hash=[];
+//   for (var i = 0; i < arr.length; i++) {
+//      if(arr.indexOf(arr[i])==i){
+//       hash.push(arr[i]);
+//      }
+//   }
+//   return hash;
+// }
+
+// console.log(unique2(a));
+//深拷贝
+
+// function newobj(obj) {
+
+// var str, newobj = obj.constructor === Array ? [] : {};//constructor 属性返回对创建此对象的数组函数的引用。创建相同类型的空数据
+
+// if (typeof obj !== 'object') {
+
+//   return;
+
+// } else {
+
+//   for (var i in obj) {
+
+//     if (typeof obj[i] === 'object'){//判断对象的这条属性是否为对象
+
+//       newobj[i] = newobj(obj[i]);//若是对象进行嵌套调用
+
+//     }else{
+
+//       newobj[i] = obj[i];
+
+//     }
+
+//   }
+
+// }
+
+// return newobj;//返回深度克隆后的对象
+
+// };
+
+
+// function objj(obj){
+// var newobj = obj.constructor === Array ? [] : {};
+//   if(typeof obj !== 'object')
+//   {return;
+//   }
+//   else{
+//     for(var i in obj){
+//       if(typeof obj[i] === 'object' )
+//       {
+//         newobj[i] = objj(obj[i]);
+//       }
+//       else{
+//         newobj[i] = obj[i];
+//       }
+//     }
+//   }
+//   return newobj;
+// };
+// var obj = {
+//   name : "nbb",
+//   sex : 'nmm'
+// }
+// var newo = newobj(obj);
+// console.log(newo);
+// obj.name = 'nbm';
+// console.log(newo);
+// var arry = [1, 2, 3, 4];
+// var newoj = newobj(arry);
+// console.log(newoj);
+// arry.push(5);
+// console.log(newoj);
+
+
+// var newo1 = objj(obj);
+// console.log(newo1);
+// obj.name = 'nbm';
+// console.log(newo1);
+// var arry = [1, 2, 3, 4];
+// var newoj1 = objj(arry);
+// console.log(newoj1);
+// arry.push(5);
+// console.log(newoj1);
+var a = [];
+for (let i = 0; i < 10; i++) {
+  a[i] = function () {
+    console.log(i);
+  };
+}
+a[6](); // 6
+  </script>
+
+
+</body>
+</html>
